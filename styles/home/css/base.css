@@ -1,1 +1,40 @@
 @charset "UTF-8";
+
+@font-face {
+	font-family: 'Poppins';
+	src: url('/src/assets/fonts/Poppins-Regular.ttf'), format('truetype');
+}
+
+@font-face {
+	font-family: 'Oxanium';
+	src: url('/src/assets/fonts/Oxanium-SemiBold.ttf'), format('truetype');
+}
+
+:root {
+	--font-defaut: 'Poppins', sans-serif;
+	--secondary-font: 'Oxanium', sans-serif;
+	--default-font-color: #000;
+	--default-background-color: #ad9fb9;
+	--containers-color: rgba(54, 12, 69, 0.4);
+	--buttons-color: #360c45;
+	--outline-container: none;
+	--backdrop-container: blur(0px);
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	font-family: var(--font-defaut);
+}
+
+body {
+	height: 100dvh;
+	width: 100dvw;
+}
+
+main {
+	height: 100%;
+	width: 100%;
+}

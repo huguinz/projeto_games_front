@@ -5,19 +5,133 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/styles/home/css/base.css">
+    <link rel="stylesheet" href="/styles/home/css/theme/dark_mode.css">
+    <link rel="stylesheet" href="/styles/home/css/layout.css">
+    <link rel="stylesheet" href="/styles/home/css/components.css">
     <title>Home - Choose your game!</title>
 </head>
 
 <body>
-    <header>
-        <img src="/src/assets/icons/search.png" alt="">
-        <input type="text" placeholder="Search Your game...">
-        <input type="checkbox" id="switch_theme">
-        <label for="switch_theme">
+    <main>
+        <aside class="container menu">
+            <div class="fill_section" id="home_menu">
+                <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M31.25 44.1792V27.5125C31.25 26.96 31.0305 26.4301 30.6398 26.0394C30.2491 25.6487 29.7192 25.4292 29.1667 25.4292H20.8333C20.2808 25.4292 19.7509 25.6487 19.3602 26.0394C18.9695 26.4301 18.75 26.96 18.75 27.5125V44.1792"
+                        stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    <path
+                        d="M6.25 21.2625C6.24985 20.6564 6.38195 20.0576 6.63706 19.5078C6.89217 18.958 7.26416 18.4704 7.72708 18.0792L22.3104 5.58129C23.0625 4.94568 24.0153 4.59695 25 4.59695C25.9847 4.59695 26.9375 4.94568 27.6896 5.58129L42.2729 18.0792C42.7358 18.4704 43.1078 18.958 43.3629 19.5078C43.6181 20.0576 43.7501 20.6564 43.75 21.2625V40.0125C43.75 41.1176 43.311 42.1774 42.5296 42.9588C41.7482 43.7402 40.6884 44.1792 39.5833 44.1792H10.4167C9.3116 44.1792 8.25179 43.7402 7.47039 42.9588C6.68899 42.1774 6.25 41.1176 6.25 40.0125V21.2625Z"
+                        stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+            </div>
+            <div class="fill_section" id="releases_menu">
+                <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M9.37492 34.375C6.24992 37 5.20825 44.7917 5.20825 44.7917C5.20825 44.7917 12.9999 43.75 15.6249 40.625C17.1041 38.875 17.0833 36.1875 15.4374 34.5625C14.6276 33.7896 13.5609 33.343 12.4421 33.3084C11.3232 33.2738 10.2309 33.6536 9.37492 34.375Z"
+                        stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    <path
+                        d="M25 31.25L18.75 25C19.8586 22.1238 21.2546 19.3668 22.9167 16.7708C25.3441 12.8895 28.7242 9.69384 32.7354 7.48768C36.7466 5.28152 41.2556 4.13826 45.8333 4.16665C45.8333 9.83332 44.2083 19.7917 33.3333 27.0833C30.7018 28.7473 27.9101 30.1432 25 31.25Z"
+                        stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M18.7499 25H8.33325C8.33325 25 9.47909 18.6875 12.4999 16.6667C15.8749 14.4167 22.9166 16.6667 22.9166 16.6667"
+                        stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M25 31.25V41.6667C25 41.6667 31.3125 40.5208 33.3333 37.5C35.5833 34.125 33.3333 27.0833 33.3333 27.0833"
+                        stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+            </div>
+            <div class="fill_section" id="genres_menu">
+                <svg width="50" height="51" viewBox="0 0 50 51" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M25.0001 21.2625H8.33341C6.03223 21.2625 4.16675 23.128 4.16675 25.4292V42.0959C4.16675 44.397 6.03223 46.2625 8.33341 46.2625H25.0001C27.3013 46.2625 29.1667 44.397 29.1667 42.0959V25.4292C29.1667 23.128 27.3013 21.2625 25.0001 21.2625Z"
+                        stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    <path
+                        d="M37.3333 29.5959L44.6249 22.3042C45.3979 21.4469 45.8257 20.3335 45.8257 19.1792C45.8257 18.0249 45.3979 16.9115 44.6249 16.0542L34.2083 5.8042C33.3509 5.03122 32.2376 4.60339 31.0833 4.60339C29.9289 4.60339 28.8156 5.03122 27.9583 5.8042L20.8333 12.9292"
+                        stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M12.5 37.9292H12.5208" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M20.8333 29.5959H20.8541" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M31.25 12.9292H31.2708" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M37.5 19.1792H37.5208" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+            </div>
+            <div class="fill_section" id="upload_menu">
+                <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M25 27.5125V44.1792" stroke="black" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+                    <path
+                        d="M8.33339 31.4688C6.78556 29.8874 5.61791 27.9744 4.91888 25.8749C4.21985 23.7754 4.00778 21.5443 4.29872 19.3507C4.58967 17.157 5.37601 15.0584 6.59817 13.2136C7.82033 11.3689 9.44627 9.82652 11.3528 8.70327C13.2594 7.58001 15.3966 6.90535 17.6025 6.7304C19.8084 6.55546 22.0252 6.8848 24.085 7.69349C26.1448 8.50218 27.9935 9.76901 29.4912 11.398C30.9888 13.027 32.0961 14.9755 32.7292 17.0959H36.4584C38.4699 17.0956 40.4281 17.7424 42.0438 18.9405C43.6595 20.1387 44.847 21.8247 45.4308 23.7496C46.0147 25.6745 45.964 27.7361 45.2862 29.63C44.6083 31.5238 43.3394 33.1494 41.6667 34.2667"
+                        stroke="black" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M16.6667 35.8459L25.0001 27.5125L33.3334 35.8459" stroke="black" stroke-width="2.5" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                </svg>
+            </div>
+        </aside>
+        <section class="home_section">
+            <header id="header_home">
+                <div class="container" id="container_search">
+                    <svg id="search_icon" width="40" height="40" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M43.7499 44.1792L34.7083 35.1375" stroke="black" stroke-width="1.75" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                        <path
+                            d="M22.9167 40.0125C32.1214 40.0125 39.5833 32.5506 39.5833 23.3459C39.5833 14.1411 32.1214 6.6792 22.9167 6.6792C13.7119 6.6792 6.25 14.1411 6.25 23.3459C6.25 32.5506 13.7119 40.0125 22.9167 40.0125Z"
+                            stroke="black" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                    <input type="text" id="search_game" placeholder="Search your game">
+                </div>
+                <input type="checkbox" id="checkbox_switch">
+                <label for="checkbox_switch" title="Switch theme" id="checkbox_label">
+                    <div id="switch">
+                        <svg id="light_icon" width="25" height="25" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M15 20C17.7614 20 20 17.7614 20 15C20 12.2386 17.7614 10 15 10C12.2386 10 10 12.2386 10 15C10 17.7614 12.2386 20 15 20Z"
+                                stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M15 2.5V5" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M15 25V27.5" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M6.1626 6.16251L7.9251 7.92501" stroke="black" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                            <path d="M22.0752 22.075L23.8377 23.8375" stroke="black" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                            <path d="M2.5 15H5" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M25 15H27.5" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M7.9251 22.075L6.1626 23.8375" stroke="black" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                            <path d="M23.8377 6.16251L22.0752 7.92501" stroke="black" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+                    </div>
+                </label>
+            </header>
+            <article class="new_games_releases">
+                <div class="slider">
+                    <div id="slider_cont">
+                        <input type="radio" class="conts" id="cont1">
+                        <input type="radio" class="conts" id="cont2">
+                        <input type="radio" class="conts" id="cont3">
+                    </div>
 
-            <img src="/src/assets/icons/dark_theme.png" alt="">
+                    <div class="slides">
+                        <img src="https://images.unsplash.com/photo-1553481187-be93c21490a9?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fGdhbWV8ZW58MHx8MHx8fDA%3D"
+                            alt="">
+                        <div id="game_alert">
+                            <p>NEW!</p>
+                        </div>
+                        <div id="game_info">
+                            <h1>Assasins Creed Valhalla</h1>
+                            <p>Explore um mundo aberto dinâmico, ambientado na Idade das Trevas na Inglaterra.</p>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <article class="show_games">
+                <h1>You might also like</h1>
+                <section class="container_games">
+                    <div class="game">
+                        <img src="#" alt="(nome do jogo em questao vira aqui(javascript))">
+                        <h1>Game Name</h1>
+                        <button class="see_more" type="button">See more</button>
+                    </div>
+                </section>
+            </article>
+        </section>
+    </main>
 
-        </label>
-    </header>
+    <script type="module" src="/scripts/home/js/main.js"></script>
 </body>
 </html>

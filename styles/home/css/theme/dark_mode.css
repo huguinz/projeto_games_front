@@ -1,0 +1,6 @@
+body.darkmode {
+	--default-font-color: #fff;
+	--default-background-color: linear-gradient(135deg, #0e011a, #1c032f);
+	--containers-color: rgba(54, 12, 69, 0.4);
+	--buttons-color: #360c45;
+}
